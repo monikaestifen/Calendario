@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4FFFC107"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/monButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="72dp"
+        />
+
+
+
+    <Button
+        android:id="@+id/tueButton"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="72dp"
+        android:layout_alignParentRight="true"
+        />
+<!--        android:layout_toRightOf="@+id/monButton"-->
+
+
+
+    <Button
+        android:id="@+id/wedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_below="@id/monButton"
+        android:layout_marginLeft="72dp"
+
+
+        />
+
+    <Button
+        android:id="@+id/thuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_below="@id/tueButton"
+        android:layout_marginRight="72dp"
+        android:layout_alignParentRight="true"
+      />
+
+    <Button
+        android:id="@+id/friButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thuButton"
+        android:layout_below="@id/wedButton"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/satButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_below="@id/friButton"
+     />
+
+    <Button
+        android:id="@+id/sunButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_below="@id/friButton"
+        android:layout_marginRight="72dp"
+        android:layout_alignParentRight="true"/>
+
+
+    <TextView
+        android:id="@+id/weekTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Week:"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:textColor="#757D75"
+    />
+</RelativeLayout>
